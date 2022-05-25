@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'DFIR-Gathering Agent Docs',
+  tagline: 'DFIR Gathering Agent Documentation',
+  url: 'https://stgcd-dfir-gather-docs.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,15 +16,15 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'kmahyyg', // Usually your GitHub org/user name.
+  projectName: 'DFIR-Gathering-Docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en','zh-Hans'],
   },
 
   presets: [
@@ -57,9 +57,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'DFIR-Gathering',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'DFIR-Gathering Docs Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -71,8 +71,16 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/kmahyyg/DFIR-Gathering-Docs',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
+            type: 'docsVersionDropdown',
             position: 'right',
           },
         ],
@@ -93,17 +101,13 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/kmahyyg/DFIR-Gathering-Docs',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'Email us',
+                href: 'mailto://spam@kmahyyg.xyz',
+              }
             ],
           },
           {
@@ -115,12 +119,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/kmahyyg/DFIR-Gathering-Docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} kmahyyg. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
