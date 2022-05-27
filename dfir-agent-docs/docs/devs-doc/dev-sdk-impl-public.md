@@ -38,6 +38,8 @@ package logging
 func NewLogger(prefix string) *logrus.Entry {}
 ```
 
+获得的 Logger 可以直接使用 `.Info()` `.Fatal()` `.Warn()` 方法打印不同级别的日志信息。
+
 
 随机数据和随机字符串的生成：
 ```go
