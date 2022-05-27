@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'DFIR-Gathering Agent Docs',
-  tagline: 'DFIR Gathering Agent Documentation',
+  tagline: 'Agent Documentation, Use Proxy to Access if in China Mainland',
   url: 'https://stgcd-dfir-gather-docs.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -23,7 +23,7 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh-Hans',
     locales: ['en','zh-Hans'],
   },
 
@@ -67,9 +67,9 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Team Blog', position: 'left'},
           {
             href: 'https://github.com/kmahyyg/DFIR-Gathering-Docs',
             label: 'GitHub',

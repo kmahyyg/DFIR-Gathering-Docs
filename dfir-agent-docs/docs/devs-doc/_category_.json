@@ -1,8 +1,8 @@
 {
-  "label": "Tutorial - Basics",
+  "label": "开发者文档",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "插件和程序开发者使用"
   }
 }
